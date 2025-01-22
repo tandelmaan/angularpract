@@ -1,0 +1,27 @@
+
+<div>
+    <form action="" [formGroup]="CustomerForm" (ngSubmit)="get_customer_data(CustomerForm.value)">
+        <label for="">Username</label><br>
+        <input type="text" placeholder="Enter Username" formControlName="username">
+        <br><br>
+        <label for="">Email</label><br>
+        <input type="email" placeholder="Enter Email" formControlName="email">
+        <br><br>
+        <label for="">Password</label><br>
+        <input type="password" placeholder="Enter Password" formControlName="pass">
+        <br>
+        <br>
+        <label for="">City : </label>
+        <select name="city" id="city" formControlName="city">
+            <option value="navsari">Navsari</option>
+            <option value="surat">Surat</option>
+            <option value="udhna">Udhna</option>
+        </select>
+        <br>
+        <br>
+        <label for="">Address</label><br>
+        <textarea name="" id="" formControlName="address"></textarea>
+        <br><br>
+        <p-button type="submit">Submit</p-button>
+    </form>
+</div>

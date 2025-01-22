@@ -1,0 +1,56 @@
+<div>
+    <input type="search" name="serch" id="" [(ngModel)]="serchText">
+</div>
+<p-table [value]="finaldata | serchpipe:serchText" >
+    <ng-template pTemplate="header">
+      <tr>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Password</th>
+        <th>City</th>
+        <th>Address</th>
+        <th>Actions</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-item>
+      <tr>
+        <td>{{ item.username }}</td>
+        <td>{{ item.email }}</td>
+        <td>{{ item.pass }}</td>
+        <td>{{ item.city }}</td>
+        <td>{{ item.address }}</td>
+        <td>
+          <p-button (onClick)="deletedata(item.id)">Delete</p-button>
+          <p-button (onClick)="updatedata(item)">Edit</p-button>
+        </td>
+      </tr>
+    </ng-template>
+  </p-table>
+  <p-dialog header="Customer Form" [(visible)]="display" [modal]="true" [closable]="false">
+    <div class="form-container">
+      <form action="" [formGroup]="CustomerForm" (ngSubmit)="save()">
+        <label for="">Username</label><br>
+        <input type="text" placeholder="Enter Username" formControlName="username">
+        <br><br>
+        <label for="">Email</label><br>
+        <input type="email" placeholder="Enter Email" formControlName="email">
+        <br><br>
+        <label for="">Password</label><br>
+        <input type="password" placeholder="Enter Password" formControlName="pass">
+        <br><br>
+        <label for="">City :</label>
+        <select name="city" id="city" formControlName="city">
+          <option value="navsari">Navsari</option>
+          <option value="surat">Surat</option>
+          <option value="udhna">Udhna</option>
+        </select>
+        <br><br>
+        <label for="">Address</label><br>
+        <textarea name="" id="" formControlName="address"></textarea>
+        <br><br>
+        <p-button type="submit" label="Save"></p-button>
+        <p-button label="Cancel" icon="pi pi-times" (onClick)="display = false"></p-button>
+      </form>
+    </div>
+  </p-dialog>
+  

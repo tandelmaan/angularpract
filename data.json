@@ -1,0 +1,44 @@
+{
+  "customerdata": [
+    {
+      "id": "b5af",
+      "username": "maan",
+      "email": "maan@123",
+      "pass": "maan123",
+      "city": "udhna",
+      "address": "maroli"
+    },
+    {
+      "id": "dfc7",
+      "username": "maan1",
+      "email": "maan1@122",
+      "pass": "maanqwe",
+      "city": "udhna",
+      "address": "gujarat"
+    },
+    {
+      "username": "rahulseth",
+      "email": "rahul@123",
+      "pass": "maan",
+      "city": "udhna",
+      "address": "danti\n",
+      "id": "c647"
+    },
+    {
+      "id": "d319",
+      "username": "laala",
+      "email": "laala@123",
+      "pass": "laala123",
+      "city": "surat",
+      "address": "navsari"
+    },
+    {
+      "username": "raj12jyyfj",
+      "email": "raj",
+      "pass": "raj",
+      "city": "",
+      "address": "raj",
+      "id": "1838"
+    }
+  ]
+}

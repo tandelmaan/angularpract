@@ -1,0 +1,18 @@
+form{
+    border: 2px solid white;
+    display: inline-block;
+    padding: 30px;
+
+}
+div{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+input{
+    height: 30px;
+}
+span{
+    cursor: pointer;
+}

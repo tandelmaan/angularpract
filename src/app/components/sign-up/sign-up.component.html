@@ -1,0 +1,28 @@
+<div>
+    <form action="" [formGroup]="SignupForm" (ngSubmit)="get_form_data(SignupForm.value)">
+        <label for="">Username</label><br>
+        <input type="text" placeholder="Enter Username" formControlName="username">
+        <br>
+        @if (xUsername?.invalid && xUsername?.touched) {
+            <span style="color: red;">Plese enter valid details </span>
+        }
+        <br><br>
+        <label for="">Email</label><br>
+        <input type="email" placeholder="Enter Email" formControlName="email">
+        <br>
+        @if (xEmail?.invalid && xEmail?.touched) {
+            <span style="color: red;">Plese enter valid details </span>
+        }
+        <br><br>
+        <label for="">Password</label><br>
+        <input type="password" placeholder="Enter Password" formControlName="pass">
+        <br>
+        @if (xPass?.invalid && xPass?.touched) {
+            <span style="color: red;">Plese enter valid details </span>
+        }
+        <br><br>
+        <p-button type="submit">Signup</p-button>
+        <br><br>
+        <span (click)="spanclick()" style="color: blue;">Login</span>
+    </form>
+</div>

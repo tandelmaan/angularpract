@@ -1,0 +1,30 @@
+form{
+    border: 2px solid white;
+    display: inline-block;
+    padding: 30px;
+    background-color: rgb(236, 224, 224);
+
+}
+div{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+label{
+    color: black;
+}
+input::placeholder{
+    color: aliceblue;
+}
+p-button{
+    margin-left: 40px;
+}
+select{
+    background-color: black;
+
+}
+input,textarea{
+    height: 30px;
+    width: 250px;
+    background-color: black;
+}
